@@ -484,13 +484,17 @@ function play_snake() {
             ny = 0;
         }
 
-        
+
 
       if (check_collision(nx, ny, snake_array) || life == 0 || check_collision(nx, ny, wall_arrayv) || check_collision(nx, ny, wall_arrayh)) {
             //pelin restarttaus
           alert("Peli loppui. Pisteesi on " + score);
-          init();
-          play();
+          pause();
+          function showStuff(id) {
+    document.getElementById(id).style.visibility = 'hidden';
+}
+          // init();
+          // play();
 
           return;
         }
