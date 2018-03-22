@@ -489,10 +489,12 @@ function play_snake() {
       if (check_collision(nx, ny, snake_array) || life == 0 || check_collision(nx, ny, wall_arrayv) || check_collision(nx, ny, wall_arrayh)) {
             //pelin restarttaus
           alert("Peli loppui. Pisteesi on " + score);
+          document.getElementById('pelialue').style.visibility = 'hidden';
           pause();
-          function showStuff(id) {
-    document.getElementById(id).style.visibility = 'hidden';
-}
+
+
+
+
           // init();
           // play();
 
@@ -603,5 +605,14 @@ function play_snake() {
         }
         return false;
     }
+
+    function myFunction() {
+    var x = document.getElementById("pojot");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 }

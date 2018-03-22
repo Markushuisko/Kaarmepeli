@@ -6,15 +6,21 @@
       <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h3> Nuolinäppäimillä liikutaan, välilyönnistä keskeyttää, jatka peliä painamalla 'P' ja 'R' voit aloittaa pelin uudestaan </h3>
-
-    <div>
-    <canvas id="canvas" width="500" height="500"></canvas>
+    <div id="pelialue">
+      <h3> Nuolinäppäimillä liikutaan, välilyönnistä keskeyttää, jatka peliä painamalla 'P' ja 'R' voit aloittaa pelin uudestaan </h3>
+      <canvas id="canvas" width="500" height="500"></canvas>
     </div>
-    <div class="pojot">
+    <div id="pojot">
+
       <form class="" action="index.html" method="post">
-        <input type="text" name="" value="" placeholder="annan nimi">
+
+        <h1>Täytä lomake päästäksesi pistelistaan!</h1>
+        <button onclick="myFunction()">Lomakkeeseen</button>
+        <input type="text" name="nimi" value="" placeholder="nimi">
+        <input type="text" name="pvm" value="" placeholder="päivämäärä">
+
       </form>
+
     </div>
   </body>
 

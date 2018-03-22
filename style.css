@@ -4,6 +4,7 @@
 
 #function paint {
   position: absolute;
+  color: blue;
 }
 
 #style_div {
@@ -19,6 +20,7 @@
    display: block;
    border: 3px solid black;
  }
+
   h3 {
     text-align: center;
     font-family: "Comic Sans MS",  sans-serif;
