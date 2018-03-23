@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pistelista</title>
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="style">
+
+      <form action="insert_score.php" method="post">
+        <label><b>Nimi:</b></label>
+        <input type="text" name="nimi" value="">
+
+        <label><b>Päivämäärä:</b></label>
+        <input type="text" name="pvm" value="">
+
+        <label><b>Pisteet:</b></label>
+        <input type="text" name="pisteet" value="">
+
+        <button type="submit" value="Submit">Tallenna</button>
+
+    </div>
+  </div>
+
+    <style>
+
+  h1 {
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #676464;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .container {
+    padding: 20px 700px;
+  }
+
+  .style {
+    background-color: rgb(224, 177, 35);
+    opacity: 0.75;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+  }
+
+  b {
+    font-family: 'Roboto Slab', serif;
+  }
+
+  </style>
+
+  </body>
+</html>

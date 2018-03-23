@@ -606,13 +606,11 @@ function play_snake() {
         return false;
     }
 
-    function myFunction() {
-    var x = document.getElementById("pojot");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
+    function toggledisplay(pojot)
+    {
+        (function(style) {
+            style.display = style.display === 'none' ? '' : 'none';
+        })(document.getElementById(pojot).style);
     }
-}
 
 }
