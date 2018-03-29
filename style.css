@@ -1,6 +1,27 @@
-#pojot {
-  display: block;
-  text-align: center;
+#pistelista {
+  text-align: ;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #676464;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.container {
+  padding: 20px 700px;
+}
+
+.style {
+  background-color: rgb(224, 177, 35);
+  opacity: 0.75;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
 }
 
 #function paint {
@@ -33,4 +54,8 @@ height:50px;
  background-color:red;
 position: fixed;
 
+}
+
+.hide {
+  display: none;
 }

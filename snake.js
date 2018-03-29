@@ -489,7 +489,8 @@ function play_snake() {
       if (check_collision(nx, ny, snake_array) || life == 0 || check_collision(nx, ny, wall_arrayv) || check_collision(nx, ny, wall_arrayh)) {
             //pelin restarttaus
           alert("Peli loppui. Pisteesi on " + score);
-          document.getElementById('pelialue').style.visibility = 'hidden';
+          document.getElementById('pelialue').classList.add('hide');
+          document.getElementById('pistelista').classList.remove('hide');
           pause();
 
 

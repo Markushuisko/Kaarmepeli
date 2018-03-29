@@ -10,17 +10,23 @@
       <h3> Nuolinäppäimillä liikutaan, välilyönnistä keskeyttää, jatka peliä painamalla 'P' ja 'R' voit aloittaa pelin uudestaan </h3>
       <canvas id="canvas" width="500" height="500"></canvas>
     </div>
-    <div id="pojot">
+    <div id="pistelista" class="hide">
 
-      <form class="" action="index.html" method="post">
+      <div class="container">
+        <div class="style">
 
-        <h1>Täytä lomake päästäksesi pistelistaan!</h1>
-        <a href="pistelista.html" title="Näytä pistelista" onClick="toggledisplay('changethis');">Pistelistaan</a>
+          <form action="mysql/insert_score.php" method="post">
+            <label><b>Nimi:</b></label>
+            <input type="text" name="nimi" value="">
 
-        <!-- <input type="text" name="nimi" value="" placeholder="nimi"> -->
-        <!-- <input type="text" name="pvm" value="" placeholder="päivämäärä"> -->
+            <label><b>Päivämäärä:</b></label>
+            <input type="text" name="pvm" value="">
 
-      </form>
+            <label><b>Pisteet:</b></label>
+            <input type="text" name="pisteet" value="">
+
+            <button type="submit" value="Submit">Tallenna</button>
+
 
     </div>
   </body>
