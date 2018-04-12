@@ -15,6 +15,7 @@
 
 $(document).ready(function () {
   play_snake();
+      localStorage.removeItem("points");
 });
 
 
@@ -491,6 +492,9 @@ function play_snake() {
           alert("Peli loppui. Pisteesi on " + score);
           document.getElementById('pelialue').classList.add('hide');
           document.getElementById('pistelista').classList.remove('hide');
+
+            localStorage.setItem("points", score);
+
           pause();
 
 

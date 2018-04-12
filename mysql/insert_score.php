@@ -15,17 +15,19 @@ if($conn->connect_error) {
   die('Connectaaminen failas:' .$conn->connect_error);
 }
 
-$name = mysqli_real_escape_string($conn, $_POST['name']);
-$date = mysqli_real_escape_string($conn, $_POST['date']);
-$points = mysqli_real_escape_string($conn, $_POST['points']);
+if(isset($_POST['name'])){ $name = $_POST['name']; }
 
-$sql = "INSERT INTO highscore (name, date, points) VALUES ('Ville', CURDATE(), 700)";
+if(isset($_POST['points'])){ $points = $_POST['points']; }
+
+
+$sql = "INSERT INTO highscore (name, date, points) VALUES ('$name', CURDATE(), '$points')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+    echo "Tiedot tallennettiin onnistuneesti";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+header('Location:show_score.php');
 
 
 
@@ -38,4 +40,4 @@ $sql = "INSERT INTO highscore (date, points, name) VALUES (CURDATE(), 700, 'Ismo
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
-}
+} */

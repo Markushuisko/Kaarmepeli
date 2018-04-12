@@ -17,13 +17,12 @@
 
           <form action="mysql/insert_score.php" method="post">
             <label><b>Nimi:</b></label>
-            <input type="text" name="nimi" value="">
-
-            <label><b>Päivämäärä:</b></label>
-            <input type="text" name="pvm" value="">
+            <input type="text" name="name" value="">
 
             <label><b>Pisteet:</b></label>
-            <input type="text" name="pisteet" value="">
+            <input type="text" name="points" id="pisteet" value="" readonly>
+
+            <script> document.getElementById("pisteet").value = localStorage.getItem("points"); </script>
 
             <button type="submit" value="Submit">Tallenna</button>
 
