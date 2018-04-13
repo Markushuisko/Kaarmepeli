@@ -21,3 +21,11 @@ if ($result->num_rows > 0) {
 ?>
 
 <a href="http://localhost/Kaarmepeli/" class="button">Takaisin peliin</a>
+
+<style>
+
+table {
+  float: left;
+}
+
+</style>

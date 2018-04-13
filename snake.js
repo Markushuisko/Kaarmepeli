@@ -493,7 +493,7 @@ function play_snake() {
           document.getElementById('pelialue').classList.add('hide');
           document.getElementById('pistelista').classList.remove('hide');
 
-            localStorage.setItem("points", score);
+            document.getElementById("pisteet").value = score;
 
           pause();
 
