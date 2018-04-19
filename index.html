@@ -24,11 +24,39 @@
 
 
             <button type="submit" value="Submit">Tallenna</button>
-            <a href="http://localhost/Kaarmepeli/" class="button">Takaisin</a>
+            <a href="http://localhost/Kaarmepeli/" class="button btn">Älä tallenna</a>
 
+      </div>
     </div>
   </body>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type = "text/javascript "> </script>
   <script src="snake.js"></script>
+
+<style>
+
+.container {
+        width: 50%;
+        max-width: 900px;
+        min-width: 250px;
+        margin: 100px auto;
+        border: 1px solid red;
+      }
+
+/*Use a media query to add a breakpoint at 800px:*/
+     @media (max-width:800px) {
+       .container{
+         margin: 0px auto;
+         }
+       .style, nav {
+         margin: 0px;
+         float: none;
+         clear: both;
+         max-width: none;
+         min-width: none;
+       }
+     }
+
+</style>
+
 </html>

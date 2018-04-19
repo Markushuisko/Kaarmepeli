@@ -13,10 +13,6 @@ input[type="text"] {
   background-color: white;
 }
 
-.container {
-  padding: 20px 700px;
-}
-
 .style {
   background-color: rgb(224, 177, 35);
   opacity: 0.75;
@@ -29,10 +25,6 @@ input[type="text"] {
   color: blue;
 }
 
-#style_div {
-  float: right;
-
-}
 
    #canvas {
    width: auto;
